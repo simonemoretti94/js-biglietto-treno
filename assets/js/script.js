@@ -56,7 +56,7 @@ alert("hi, i'm here just to help and let you know some infos: 1 - you're paying 
 let price;
 
 
-price = km * 0.21;
+price = (km * 0.21).toFixed(2);
 
 //output price without discounts
 console.log(`without discounts ${price} €`);
@@ -76,6 +76,7 @@ agetd.innerText = `${age}`;
 // checking for discount rights
 let y;
 let n;
+let temp_price;
 let tot_price;
 
 if (age < 18) {
@@ -84,7 +85,10 @@ if (age < 18) {
     y.innerText = `yes`
     n =  document.getElementById('40yn');
     n.innerText = `-`;
-    tot_price = price * 0.2;
+    tot_price = (price * 0.2).toFixed(2);
+    console.log(tot_price);
+    temp_price = document.getElementById('output');
+    temp_price.innerText = `tot in euros: ${tot_price}`;
 
 }
 else if (age > 65) {
@@ -93,7 +97,9 @@ else if (age > 65) {
     y.innerText = `-`
     n =  document.getElementById('40yn');
     n.innerText = `yes`;
-    tot_price = price * 0.4;
+    tot_price = (price * 0.4).toFixed(2);
+    temp_price = document.getElementById('output');
+    temp_price.innerText = `tot in euros: ${tot_price}`;
 }
 else {
     console.log('bruh you ain\'t any rights :( ');
@@ -102,3 +108,5 @@ else {
     n =  document.getElementById('40yn');
     n.innerText = `-`;
 }
+
+alert('have a nice trip. enjoy!');
