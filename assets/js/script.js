@@ -54,12 +54,12 @@ const age = prompt('then, please write below your age');
 alert("hi, i'm here just to help and let you know some infos: 1 - you're paying 0.21€ each km. 2 - 20% discount is applied on teen below 18 years old 3 - 40% discount is applied on elderly over 65 years old.");
 
 let price;
-let tot_price;
+
 
 price = km * 0.21;
 
 //output price without discounts
-console.log(`${price}€`);
+console.log(`without discounts ${price} €`);
 
 //getting td km
 const kmtd =document.getElementById('km');
@@ -74,4 +74,31 @@ const agetd = document.getElementById('age');
 agetd.innerText = `${age}`;
 
 // checking for discount rights
+let y;
+let n;
+let tot_price;
 
+if (age < 18) {
+    console.log('I\'m talking to a young chick.');
+    y =  document.getElementById('20yn');
+    y.innerText = `yes`
+    n =  document.getElementById('40yn');
+    n.innerText = `-`;
+    tot_price = price * 0.2;
+
+}
+else if (age > 65) {
+    console.log('I\'m talking to a skilled bro.');
+    y =  document.getElementById('20yn');
+    y.innerText = `-`
+    n =  document.getElementById('40yn');
+    n.innerText = `yes`;
+    tot_price = price * 0.4;
+}
+else {
+    console.log('bruh you ain\'t any rights :( ');
+    y =  document.getElementById('20yn');
+    y.innerText = `-`
+    n =  document.getElementById('40yn');
+    n.innerText = `-`;
+}
