@@ -51,7 +51,7 @@ const km = prompt('please write below the amount of km you\'re gonna grind :)');
 const age = prompt('then, please write below your age');
 
 // information for travellers
-alert("hi, i'm here just to help and let you know some infos: 1 - you're paying 0.21€ each km. 2 - 20% discount is applied on teen below 18 years old 3 - 40% discount is applied on elderly over 65 years old.");
+alert("hi, i'm here just to help and let you know some infos:   1 - you're paying 0.21€ each km.    2 - 20% discount is applied on teen below 18 years old  3 - 40% discount is applied on elderly over 65 years old.");
 
 let price;
 
@@ -107,6 +107,8 @@ else {
     y.innerText = `-`
     n =  document.getElementById('40yn');
     n.innerText = `-`;
+    temp_price = document.getElementById('output');
+    temp_price.innerText = `tot in euros: ${price}`;
 }
 
 alert('have a nice trip. enjoy!');
