@@ -85,7 +85,7 @@ if (age < 18) {
     y.innerText = `yes`
     n =  document.getElementById('40yn');
     n.innerText = `-`;
-    tot_price = (price * 0.2).toFixed(2);
+    tot_price = (price - (price * 0.2)).toFixed(2);
     console.log(tot_price);
     temp_price = document.getElementById('output');
     temp_price.innerText = `tot in euros: ${tot_price}`;
@@ -97,7 +97,7 @@ else if (age > 65) {
     y.innerText = `-`
     n =  document.getElementById('40yn');
     n.innerText = `yes`;
-    tot_price = (price * 0.4).toFixed(2);
+    tot_price = (price - (price * 0.4)).toFixed(2);
     temp_price = document.getElementById('output');
     temp_price.innerText = `tot in euros: ${tot_price}`;
 }
