@@ -1,1 +1,31 @@
 /* media query */
+
+@media screen and (max-width: 768px) {
+    main .container {
+        width: 80%;
+    }
+
+    * {
+        font-size: 102%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main .container {
+        width: 70%;
+    }
+
+    * {
+        font-size: 98%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main .container {
+        width: 87%;
+    }
+
+    * {
+        font-size: 101%;
+    }
+}

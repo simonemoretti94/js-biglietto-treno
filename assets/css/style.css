@@ -16,9 +16,15 @@
 
 /* utilities */
 
+body {
+    min-width: 320px;
+    min-height: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .container {
     width: 100%;
-    height: 100%;
+    height: 80%;
     margin: 0;
     min-width: 200px;
 }
@@ -117,7 +123,7 @@ header {
 h1 {
     color: white;
     text-transform: capitalize;
-    text-shadow: 2px 0  rgb(255, 255, 255);
+    text-shadow: 4px 1.5px rgb(13, 149, 13);
     margin: 1rem 0;
 }
 
@@ -125,11 +131,6 @@ main {
     height: calc(100vh - 70px);
     background-image: url("../img/shinkansen_mtfujii.jpg");
     background-size: 100% 100%;
-}
-
-.container {
-    width: 40%;
-    margin: auto auto;
 }
 
 table {
