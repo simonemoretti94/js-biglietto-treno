@@ -29,3 +29,10 @@
         font-size: 101%;
     }
 }
+
+/* @media screen and (min-width: 1px) and (max-width: 319px) {
+    body {
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+} */

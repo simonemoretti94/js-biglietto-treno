@@ -68,3 +68,21 @@ else {
 }
 
 alert('have a nice trip. enjoy!');
+
+document.querySelector('td#output').addEventListener('mouseenter', function (){
+    document.querySelector('td#output').style.color = 'red';
+})
+
+document.querySelector('td#output').addEventListener('mouseout', function (){
+    document.querySelector('td#output').style.color = 'blue';
+})
+
+// document.querySelector('td#output').style.color = 'red';
+
+document.querySelector('td#output').addEventListener('mouseenter', function () {
+    alert('Prezzo fissato!')
+})
+
+console.log(document.querySelector('div.container').classList)
+
+
